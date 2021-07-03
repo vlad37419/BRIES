@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+     
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+     
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+     
+    });
+    </script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>BRIES</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__link menu__link_active"><a href="#">Главная</a></li>
+              <li class="menu__link"><a href="#">Новости</a></li>
+              <li class="menu__link"><a href="#">Эксперты</a></li>
+              <li class="menu__link"><a href="#">Фото-видео проектов</a></li>
+              <li class="menu__link"><a href="#">О нас</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__social social">
+          <ul class="social__nav">
+            <li class="social__link"><a href="#"><img src="img/vk.svg" alt=""></a></li>
+            <li class="social__link"><a href="#"><img src="img/inst.svg" alt=""></a></li>
+            <li class="social__link"><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+            <li class="social__link"><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="slider">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/bg.jpg" alt="">
+            <div class="slider__content">
+              <div class="slider__title">
+                BRIES Association
+              </div>
+              <div class="slider__text">
+                Barents Region Independent
+                Ecology Society
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bg.jpg" alt="">
+            <div class="slider__content">
+              <div class="slider__title">
+                BRIES Association
+              </div>
+              <div class="slider__text">
+                Barents Region Independent
+                Ecology Society
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bg.jpg" alt="">
+            <div class="slider__content">
+              <div class="slider__title">
+                BRIES Association
+              </div>
+              <div class="slider__text">
+                Barents Region Independent
+                Ecology Society
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </div>
+    <div class="news">
+      <div class="container">
+        <div class="news__container">
+          <div class="news__title title">
+            Новости
+          </div>
+          <div class="news__sub-title sub-title">
+            Экологические события, происходящие в Баренц-регионе
+          </div>
+          <div class="news__row">
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/1.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  ЕДИНЫЙ МОНИТОРИНГ АРКТИКИ
+                </div>
+                <div class="column__text_1">
+                  В рамках Красноярского Экономического Форума
+                  эксперты обсудили перспективы создания
+                  системы эко-мониторинга российских
+                  арктических регионов.
+                </div>
+                <div class="column__text_2">
+                  17.04.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/2.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  ЕДИНЫЙ МОНИТОРИНГ АРКТИКИ
+                </div>
+                <div class="column__text_1">
+                  На смену нефти и газу приходит кремний.
+                  В России основными богатствами, которые вот
+                  уже третье десятилетие благополучно
+                  разворовываются, считаются...
+                </div>
+                <div class="column__text_2">
+                  04.04.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/3.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  ЕДИНЫЙ МОНИТОРИНГ АРКТИКИ
+                </div>
+                <div class="column__text_1">
+                  Баренцев регион стремительно теряет шарм
+                  уникальной площадки трансграничного
+                  сотрудничества и вместо
+                  «территории мира»...
+                </div>
+                <div class="column__text_2">
+                  12.03.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/4.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  В Антарктиде пингвин спасся от...
+                </div>
+                <div class="column__text_1">
+                  Драматичный трехминутный фильм сняли
+                  туристы в Антарктиде, показав, как
+                  пингвин, которого преследовала
+                  стая косаток, спасся, запрыгнув к ним в лодку.
+                </div>
+                <div class="column__text_2">
+                  11.03.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/5.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  СЕГОДНЯ - ВСЕМИРНЫЙ ДЕНЬ КИТОВ
+                </div>
+                <div class="column__text_1">
+                  Всемирный день защиты морских млекопитающих, или Всемирный день китов отмечается сегодня
+                  во многих странах.
+                </div>
+                <div class="column__text_2">
+                  19.02.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+            <div class="news__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/6.jpg" alt="">
+                </div>
+                <div class="column__title">
+                  Арктика в стиле милитари
+                </div>
+                <div class="column__text_1">
+                  ВВС США впервые отправляют в Норвегию бомбардировщики B-1, что должно дать Москве четкий сигнал о том,
+                  что американские военные будут действовать в...
+                </div>
+                <div class="column__text_2">
+                  09.02.2021
+                </div>
+                <div class="column__button">
+                  <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__button">
+            <a href="#">СМОТРЕТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="experts">
+      <div class="container">
+        <div class="experts__container">
+          <div class="experts__title title">
+            ЭКСПЕРТЫ
+          </div>
+          <div class="experts__sub-title sub-title">
+            Профессионалы BRIES
+          </div>
+          <div class="experts__row">
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img class="column-experts__image_01" src="img/01.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Тимофей Суровцев
+                </div>
+                <div class="column-experts__text">
+                  Руководитель Центра экологического 
+                  мониторинга и консалтинга "ПОМОР"
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/02.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Сергей Шахиджанян
+                </div>
+                <div class="column-experts__text">
+                  Журналист, выпускник факультета 
+                  журналистики МГУ
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/03.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Василий Борисов
+                </div>
+                <div class="column-experts__text">
+                  Медиа-менеджер
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/04.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Силье Карине Муотка
+                </div>
+                <div class="column-experts__text">
+                  Норвежский саамский политический 
+                  деятель, член исполнительного комитета 
+                  Саамского парламента Норвегии
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/05.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Силье Лундберг
+                </div>
+                <div class="column-experts__text">
+                  Норвежский эколог и председатель 
+                  Норвежского общества охраны природы
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/06.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Руне Рафаэльсен
+                </div>
+                <div class="column-experts__text">
+                  Мэр коммуны Сер-Варангер, 
+                  норвежский регион Финнмарк
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/07.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Рубен Оддекалв
+                </div>
+                <div class="column-experts__text">
+                  Руководитель «Зеленых воинов Норвегии»
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/08.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Торд Бьорк
+                </div>
+                <div class="column-experts__text">
+                  Шведский политик и общественный 
+                  деятель.
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/09.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Йохан Бекман
+                </div>
+                <div class="column-experts__text">
+                  Журналист, общественный 
+                  деятель, Финляндия
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/10.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Саид Гафуров
+                </div>
+                <div class="column-experts__text">
+                  Российский экономист, востоковед и 
+                  чиновник, а также преподаватель в ВУЗах
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/11.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Дарья Митина
+                </div>
+                <div class="column-experts__text">
+                  Российский политический деятель, 
+                  политолог, публицистка, кинообозреватель, 
+                  блогер
+                </div>
+              </div>
+            </div>
+            <div class="experts__column column-experts">
+              <div class="column-experts__item">
+                <div class="column-experts__image">
+                  <img src="img/12.jpg" alt="">
+                </div>
+                <div class="column-experts__title">
+                  Микаэл Хертофт
+                </div>
+                <div class="column-experts__text">
+                  Эколог, секретарь партии 
+                  Красно-Зеленых, Дания
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="footer__text">
+          © 2021 All Rights Reserved. Privacy Policy
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scrollup"><img src="img/arrow.svg" alt=""></a>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

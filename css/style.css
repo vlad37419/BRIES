@@ -1,0 +1,399 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* Шапка */
+
+.header {
+	background-color: #001344;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 15;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.header__container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	padding: 10px 0 10px 0;
+}
+
+.menu__list {
+	display: flex;
+	max-width: 482px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.menu__link a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	padding: 0 8px;
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.menu__link_active a {
+	background-color: #3EB5F1;
+}
+
+.social__nav {
+	display: flex;
+}
+
+.social__link a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	padding: 0 8px;
+}
+
+/* Адаптив шапки */
+
+/* Слайдер */
+
+.slider {
+	margin: 0 0 80px 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	min-height: 400px;
+	object-fit: cover;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 8px;
+}
+
+.swiper-pagination-bullet {
+	width: 55px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 0;
+	background: #fff;
+	opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+	background: #fff;
+	opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 80px;
+	right: 187px;
+	width: 213px;
+	left: auto;
+}
+
+.slider__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1000px;
+	width: 100%;
+	text-align: start;
+	text-shadow: 0 0 10px black;
+}
+
+.slider__title {
+	font-family: Montserrat;
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: 0.15em;
+	color: #FFFFFF;
+}
+
+.slider__text {
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	max-width: 720px;
+}
+
+/* Адаптив слайдера */
+
+/* Новости */
+
+.news__container {
+	margin: 0 0 80px 0;
+}
+
+.title {
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 32px;
+	color: #001344;
+	text-transform: uppercase;
+}
+
+.sub-title {
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #001344;
+	margin: 0 0 50px 0;
+}
+
+.news__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px 30px -15px;
+}
+
+.column {
+	flex: 0 1 33.333%;
+	padding: 0 15px;
+	display: flex;
+}
+
+.column__item {
+	padding: 13px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 30px 0;
+}
+
+.column__image {
+	margin: 0 0 10px 0;
+}
+
+.column__title {
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #001344;
+	margin: 0 0 10px 0;
+
+}
+
+.column__text_1 {
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #001344;
+	margin: 0 0 10px 0;
+	flex: 1 1 auto;
+}
+
+.column__text_2 {
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #001344;
+	margin: 0 0 10px 0;
+}
+
+.column__button a {
+	max-width: 150px;
+	width: 100%;
+	height: 40px;
+	background: #001344;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.news__button a {
+	max-width: 230px;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #001344;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 15px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+
+/* Адаптив новостей */
+
+/* Эксперты */
+
+.experts__container {
+	margin: 0 0 80px 0;
+}
+
+.experts__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.column-experts {
+	flex: 0 1 25%;
+	display: flex;
+	margin: 0 0 50px 0;
+}
+
+.column-experts__item {
+	padding: 0 15px;
+}
+
+.column-experts__image {
+	margin: 0 0 10px 0;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.column-experts__image_01 {
+	max-width: 270px;
+}
+
+.column-experts__title {
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #001344;
+	margin: 0 0 10px 0;
+}
+
+.column-experts__text {
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #001344;
+}
+
+/* Адаптив экспертов */
+
+/* Подвал */
+
+.footer {
+	background: #001344;
+}
+
+.footer__container {
+	display: flex;
+	align-items: flex-end;
+}
+
+.footer__logo {
+	padding: 30px 10px 30px 0;
+}
+
+.footer__text {
+	font-family: Montserrat;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	padding: 0 0 30px 0;
+}
+
+.scrollup{
+	position: relative;
+	z-index: 20;
+	width:35px;
+	height:35px;
+	position:fixed;
+	bottom:50px;
+	right: 40px;
+	display:none;
+	border-radius: 50%;
+	text-indent:-9999px;
+	background: #001344 url('../img/arrow.svg') no-repeat;
+	background-position: 50%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+/* Адаптив подвала */
